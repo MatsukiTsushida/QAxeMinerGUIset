@@ -30,6 +30,7 @@ sudo pip3 install -r requirements.txt --break-system-packages
 cp config.yml.example config.yml
 cp start_mainnet_publicpool_example.sh start.sh
 
+cd QAxeMinerGUIset
 sudo python3 GUI.py
 
 
@@ -73,6 +74,7 @@ cp start_mainnet_publicpool_example.sh start.sh
 #installing all the graphics libraries WSL ONLY
 sudo apt-get install libgl1-mesa-glx libegl1-mesa libxcb-randr0 libxcb-icccm4 libxcb-xfixes0 libxcb-shape0 libxcb-sync1 libxcb-xkb1 libxcb-render-util0 libsm6 libice6
 
+cd QAxeMinerGUIset
 sudo python3 GUI.py
 ```
 11. The repository should now be installed and the GUI and you can start the GUI with ``` python3 GUI.py ```
