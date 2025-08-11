@@ -20,7 +20,7 @@ sudo apt install git
 sudo apt install python3-pip
 
 # clone repository
-sudo git clone https://github.com/MatsukiTsushida/piaxe-minerGUIset.git
+sudo git clone https://github.com/MatsukiTsushida/QAxeMinerGUIset.git
 cd piaxe-minerGUIset
 
 # and install requirements
@@ -60,7 +60,7 @@ sudo apt install git
 sudo apt install python3-pip
 
 # clone repository
-sudo git clone https://github.com/MatsukiTsushida/piaxe-minerGUIset.git
+sudo git clone https://github.com/MatsukiTsushida/QAxeMinerGUIset.git
 cd piaxe-minerGUIset
 
 # and install requirements
@@ -74,8 +74,6 @@ cp start_mainnet_publicpool_example.sh start.sh
 sudo apt-get install libgl1-mesa-glx libegl1-mesa libxcb-randr0 libxcb-icccm4 libxcb-xfixes0 libxcb-shape0 libxcb-sync1 libxcb-xkb1 libxcb-render-util0 libsm6 libice6
 
 sudo python3 GUI.py
-
-
 ```
 11. The repository should now be installed and the GUI and you can start the GUI with ``` python3 GUI.py ```
 
