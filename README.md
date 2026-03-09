@@ -31,7 +31,12 @@ cp config.yml.example config.yml
 cp start_mainnet_publicpool_example.sh start.sh
 
 cd QAxeMinerGUIset
-sudo python3 GUI.py
+#for 4 chips to collect (legacy version with 2 distinct hasboards)
+#sudo python3 GUI.py
+
+#for 16 chips to collect (updated version 2 hashboars together)
+sudo python3 GUInew.py
+
 
 
 ```
@@ -75,7 +80,9 @@ cp start_mainnet_publicpool_example.sh start.sh
 sudo apt-get install libgl1-mesa-glx libegl1-mesa libxcb-randr0 libxcb-icccm4 libxcb-xfixes0 libxcb-shape0 libxcb-sync1 libxcb-xkb1 libxcb-render-util0 libsm6 libice6
 
 cd QAxeMinerGUIset
-sudo python3 GUI.py
+#legacy or new version
+#sudo python3 GUI.py
+sudo python3 GUInew.py
 ```
 11. The repository should now be installed and the GUI and you can start the GUI with ``` python3 GUI.py ```
 
@@ -117,7 +124,7 @@ sudo systemctl restart postgresql
 ```
 ### 1.5 If the script is prompting to put the password in for the database, just put 1324 as the password each time(!IMPORTANT! MUST BE SPECIFICALLY 1324 UNLESS U CHANGE THE CODE IN GUIPY YOURSELF)
 
-2. Run the GUI.py ``` python3 GUI.py ``` and press ``` yes ```on the dialog window
+2. Run the GUI.py ``` python3 GUInew.py ``` and press ``` yes ```on the dialog window
 3. Both grafana servers and postgres shoud be running now. Open http://localhost:3000/ for Grafana.
 4. Input User: admin, password: admin. U will be propmted to change it, for the sake of easiness I would keep all the passwords as 1324
 5. Go to Data Sources -> Add New Data Source Search for postgres (install if needed)
