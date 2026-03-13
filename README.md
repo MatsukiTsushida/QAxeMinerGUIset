@@ -34,8 +34,6 @@ cd QAxeMinerGUIset
 #for 4 chips to collect (legacy version with 2 distinct hasboards)
 #sudo python3 GUI.py
 
-#for 16 chips to collect (updated version 2 hashboars together)
-sudo python3 GUInew.py
 
 
 
@@ -81,8 +79,8 @@ sudo apt-get install libgl1-mesa-glx libegl1-mesa libxcb-randr0 libxcb-icccm4 li
 
 cd QAxeMinerGUIset
 #legacy or new version
-#sudo python3 GUI.py
-sudo python3 GUInew.py
+sudo python3 GUI.py
+
 ```
 11. The repository should now be installed and the GUI and you can start the GUI with ``` python3 GUI.py ```
 
